@@ -1,6 +1,7 @@
 body {
     font-family: "Inter", sans-serif;
     background-color: #0f0f0f;
+    color: white;
 }
 
 .container {
@@ -54,6 +55,7 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
+    font-size: 19px;
     opacity: 0.8;
 }
 
@@ -81,4 +83,53 @@ body {
     transform: scale(1.08);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     opacity: 0.8;
+}
+
+.about {
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+
+    padding: 45px 20px;
+    border: 2px gray solid;
+    border-radius: 14px;
+
+    gap: 80px;
+}
+
+.about-image img {
+    width: 500px;
+    border-radius: 12px;
+    display: block;
+}
+
+.about-info {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-tittle {
+    color: rgb(70, 67, 67);
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about-description {
+    font-size: 18px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.about-button {
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 6px;
 }
