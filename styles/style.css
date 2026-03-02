@@ -86,7 +86,7 @@ body {
 }
 
 .about {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .about-content {
@@ -132,4 +132,67 @@ body {
     background-color: gray;
     padding: 10px 20px;
     border-radius: 6px;
+}
+
+.main {
+    margin-bottom: 40px;
+}
+
+.catalog-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catalog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.catalog-card {
+    padding: 20px;
+    border: 2px gray solid;
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.catalog-card:hover {
+    transform: scale(1.05);
+}
+
+.catalog-card-tittle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.catalog-card-image {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.catalog-card-txt {
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.catalog-card-btn {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+}
+
+.catalog-card-btn:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: 21px;
 }
