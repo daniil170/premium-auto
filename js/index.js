@@ -1,0 +1,5 @@
+alert ("When you click on the links to cars, you will be redirected to this company's private website.")
+
+function closeModal() {
+    document.getElementById('modalOverlay').style.display = 'none';
+}
