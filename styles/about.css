@@ -1,0 +1,139 @@
+.main {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-hero {
+  border: 1.5px solid white;
+  border-radius: 16px;
+  padding: 20px 20px;
+
+  margin-bottom: 40px;
+}
+
+.about-hero-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 21px;
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.about-hero-text {
+  text-align: center;
+  width: 100%;
+  font-size: 19px;
+  color: #cfcfcf;
+}
+
+.about-project-content {
+  border: 1.5px solid white;
+  border-radius: 16px;
+  padding: 20px 20px;
+}
+
+.about-project-title {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 20px;
+}
+
+.about-project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.about-project-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.about-project-card-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-project-card-text p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #cfcfcf;
+
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.our-collection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.our-collection-title {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 20px;
+}
+
+.our-collection-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.our-collection-img {
+  width: 500px;
+  border-radius: 12px;
+}
+
+.our-collection-text {
+  max-width: 500px;
+  font-size: 19px;
+  color: #cfcfcf;
+}
+
+.our-collection-info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.our-collection-btn {
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.our-collection-btn:hover {
+  background: white;
+  color: black;
+}
