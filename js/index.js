@@ -13,10 +13,3 @@ if (!sessionStorage.getItem('alertShown')) {
     alert("When you click on the links to cars, you will be redirected to this company's private website.");
     sessionStorage.setItem('alertShown', 'true');
 }
-
-const burger = document.getElementById('burger');
-const nav = document.querySelector('.nav');
-
-burger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-});
