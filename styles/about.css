@@ -137,3 +137,89 @@
   background: white;
   color: black;
 }
+
+@media (max-width: 1024px) {
+    .our-collection-content {
+        gap: 30px;
+    }
+
+    .our-collection-img {
+        width: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-text {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .about-project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .our-collection-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .our-collection-img {
+        width: 100%;
+    }
+
+    .our-collection-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .our-collection-text {
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 16px 14px;
+    }
+
+    .about-hero-title {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .about-hero-text {
+        font-size: 14px;
+    }
+
+    .about-project-content {
+        padding: 16px 14px;
+    }
+
+    .about-project-title {
+        font-size: 22px;
+    }
+
+    .about-project-card-title {
+        font-size: 20px;
+    }
+
+    .about-project-card-text p {
+        font-size: 15px;
+    }
+
+    .our-collection-title {
+        font-size: 22px;
+    }
+
+    .our-collection-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
