@@ -1,0 +1,10 @@
+.panel-right {
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.signin-logo {
+    margin-top: 50px;
+}

@@ -1,0 +1,222 @@
+.hero-our-service {
+  border: 1.5px solid white;
+  border-radius: 16px;
+  padding: 20px 20px;
+
+  margin-bottom: 40px;
+}
+
+.hero-our-service-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 20px;
+}
+
+.hero-our-service-text {
+  text-align: center;
+  width: 100%;
+  font-size: 19px;
+  color: #cfcfcf;
+}
+
+.our-service-info {
+  border: 1.5px solid white;
+  border-radius: 16px;
+  padding: 20px 20px;
+}
+
+.our-service-info-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.our-service-info-cards {
+  display: grid;
+  grid-template-columns: repeat(2fr, 1);
+  gap: 35px;
+}
+
+.our-service-info-card {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+
+  transition: all 0.3s ease;
+}
+
+.our-service-info-card:hover {
+  transform: translateY(-5px);
+  border-color: #444;
+}
+
+.our-service-info-card-title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 10px;
+}
+
+.our-service-info-card-text {
+  text-align: center;
+  font-size: 20px;
+  color: #cfcfcf;
+
+  width: 100%;
+}
+
+.benefits-info {
+  border: 1.5px solid white;
+  border-radius: 16px;
+  padding: 20px 20px;
+
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.benefits-info-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.benefits-info-text {
+  text-align: center;
+  font-size: 19px;
+  color: #cfcfcf;
+  
+  width: 100%;
+}
+
+.final-block {
+  border: 1.5px solid white;
+  border-radius: 16px;
+  padding: 20px 20px;
+
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.final-block-title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  color: gray;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.final-block-text {
+  text-align: center;
+  font-size: 20px;
+  color: #cfcfcf;
+  
+  width: 100%;
+}
+
+.final-block-btn {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-our-service-text {
+        font-size: 16px;
+    }
+
+    .our-service-info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .our-service-info-card-text {
+        font-size: 16px;
+    }
+
+    .benefits-info-text {
+        font-size: 16px;
+    }
+
+    .final-block-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-our-service {
+        padding: 16px 14px;
+    }
+
+    .hero-our-service-title {
+        font-size: 20px;
+    }
+
+    .hero-our-service-text {
+        font-size: 14px;
+    }
+
+    .our-service-info {
+        padding: 16px 14px;
+    }
+
+    .our-service-info-title {
+        font-size: 20px;
+    }
+
+    .our-service-info-card {
+        padding: 20px;
+    }
+
+    .our-service-info-card-title {
+        font-size: 18px;
+    }
+
+    .our-service-info-card-text {
+        font-size: 14px;
+    }
+
+    .benefits-info {
+        padding: 16px 14px;
+    }
+
+    .benefits-info-title {
+        font-size: 20px;
+    }
+
+    .benefits-info-text {
+        font-size: 14px;
+    }
+
+    .final-block {
+        padding: 16px 14px;
+    }
+
+    .final-block-title {
+        font-size: 18px;
+    }
+
+    .final-block-text {
+        font-size: 14px;
+    }
+
+    .final-block-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}

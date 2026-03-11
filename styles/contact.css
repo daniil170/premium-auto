@@ -1,0 +1,151 @@
+.hero-contact{
+    padding:140px 0 80px;
+    text-align:center;
+}
+
+.hero-contact-title{
+    font-size:48px;
+    color:white;
+    margin-bottom:20px;
+}
+
+.hero-contact-text{
+    max-width:600px;
+    margin:0 auto;
+    color:#bdbdbd;
+    line-height:1.7;
+}
+
+.contact-wrapper{
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+    padding-bottom:120px;
+}
+
+.contact-info{
+    flex:1;
+}
+
+.contact-info-title{
+    font-size:28px;
+    margin-bottom:30px;
+    color:white;
+}
+
+.contact-info-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-info-item{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #2a2a2a;
+}
+
+.contact-info-item-text{
+    color:#bdbdbd;
+}
+
+.contact-form-info{
+    flex:1;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    background:#1a1a1a;
+    border:1px solid #2a2a2a;
+    padding:15px;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    min-height:140px;
+    resize:none;
+}
+
+.contact-form button{
+    background:#2f2f2f;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.contact-form button:hover{
+    background:#444;
+    transform:translateY(-2px);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-color:#555;
+}
+
+@media (max-width: 768px) {
+    .hero-contact {
+        padding: 80px 0 50px;
+    }
+
+    .hero-contact-title {
+        font-size: 36px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-contact {
+        padding: 50px 0 30px;
+    }
+
+    .hero-contact-title {
+        font-size: 28px;
+    }
+
+    .hero-contact-text {
+        font-size: 14px;
+    }
+
+    .contact-info-title {
+        font-size: 22px;
+    }
+
+    .contact-info-item {
+        padding: 14px;
+    }
+
+    .contact-info-item-text {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
