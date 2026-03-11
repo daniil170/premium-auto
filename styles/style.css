@@ -10,6 +10,34 @@ body {
     padding: 0 15px;
 }
 
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 21px;
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.collection-btn {
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.collection-btn:hover {
+  background: white;
+  color: black;
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -304,49 +332,77 @@ body {
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .modal {
-    background: #1a1a1a;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px;
-    padding: 40px;
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 50px 40px;
     max-width: 480px;
+    width: 90%;
     text-align: center;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+    animation: slideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-logo img {
+    width: 70px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
 }
 
 .modal-text {
-    color: #e0e0e0;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 28px;
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 32px;
 }
 
 .modal-btn {
-    background: gray;
-    color: white;
+    background: white;
+    color: black;
     border: none;
-    padding: 12px 32px;
+    padding: 13px 40px;
     border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .modal-btn:hover {
+    background: #ddd;
     transform: scale(1.05);
-    opacity: 0.85;
 }
 
-/* ── Tablet (max 1024px) ── */
 @media (max-width: 1024px) {
     .about-content {
         gap: 40px;
@@ -357,10 +413,8 @@ body {
     }
 }
 
-/* ── Small Tablet (max 768px) ── */
 @media (max-width: 768px) {
 
-    /* Header */
     .nav {
         display: none;
     }
@@ -369,7 +423,6 @@ body {
         gap: 10px;
     }
 
-    /* About */
     .about-content {
         flex-direction: column;
         gap: 30px;
@@ -387,7 +440,6 @@ body {
         align-items: center;
     }
 
-    /* Catalog & Why Choose Us */
     .catalog-cards,
     .why-choose-us-cards {
         grid-template-columns: 1fr 1fr;

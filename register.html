@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Auto | Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/signin.css">
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+
+    <div class="panel-left">
+        <div class="bg-grid"></div>
+        <div class="bg-lines"></div>
+        <div class="panel-left-label">
+            <span class="big-letter">PA</span>
+        </div>
+        <div class="panel-left-tagline">
+            <div class="gold-line"></div>
+            <h2>Join the world of <em>premium</em><br>automobiles.</h2>
+            <p>Premium Auto — Est. 2026</p>
+        </div>
+    </div>
+
+    <div class="panel-right">
+        <div class="signin-back">
+            <a href="index.html">Back to site</a>
+        </div>
+        <div class="signin-logo">
+            <img src="assets/images/palogo.png" alt="Logo">
+            <span class="signin-logo-text">Premium Auto</span>
+        </div>
+        <div class="signin-heading">
+            <h1>Create <span>account.</span></h1>
+            <p>Join Premium Auto and explore the world of luxury cars</p>
+        </div>
+        <form class="signin-form" id="registerForm">
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••">
+            </div>
+            <div class="form-group">
+                <label for="confirm">Confirm password</label>
+                <input type="password" id="confirm" placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn-submit">
+                <span>Create Account</span>
+            </button>
+            <div class="divider">
+                <span>or</span>
+            </div>
+            <div class="signin-register">
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
